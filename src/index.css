@@ -1,0 +1,478 @@
+body{
+  width: 100%;
+}
+
+/* ----------------------Navbar------------------------ */
+
+#navbar-div{
+  display: flex;
+  background-color: #015FC7;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  height: 50px
+}
+#nav-first-part li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#nav-second-part li{
+  list-style-type: none;
+  color: white;
+}
+
+/* --------------------Home------------------ */
+
+#india-img{
+  width: 100vh;
+  height: 100%;
+}
+#home-containers{
+  display: flex;
+}
+#container-1{
+
+}
+#container-2{
+  width: 500px;
+  height: 200px;
+  margin-top: 200px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 1px 1px 1px gray;
+}
+#container-2 #profile-div{
+  display: flex;
+  background-color: #015FC7;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#container-2 #profile-img img{
+  width: 12vh;
+  border-radius: 50%;
+  border: solid 1px white;
+  margin-left: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+#container-2 #profile-name{
+  padding-left: 8px;
+  color: white;
+}
+#profile-name #names{
+  font-size: 18px;
+  font-weight: bold;
+}
+#profile-name #voter-id{
+  color: gainsboro;
+}
+
+#constituency-status{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+#constituency{
+  color: #015FC7;
+  font-weight: bold;
+}
+#place{
+  color: gray;
+}
+#status{
+  color: #015FC7;
+}
+#status-value{
+  color: green;
+}
+
+#polling-div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  border: solid #015FC7 2px;
+  border-radius: 6px;
+}
+#polling-div img{
+  width: 200px;
+  height: 100px;
+}
+#polling-div p{
+  color: #015FC7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ------------------Information Center----------------- */
+
+#information-title{
+  color: #015FC7;
+}
+#information-containers{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+#important-notice{
+  background-color: #015FC7;
+  width: 400px;
+  border-radius: 12px;
+  padding: 12px;
+  margin-left: 30px;
+}
+#notice{
+  color: #015FC7;
+  background-color: gainsboro;
+  border-radius: 50%;
+  font-size: 40px;
+}
+#notice-subTitle{
+  color: gainsboro;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#important-notice p{
+  color: gainsboro;
+}
+
+#vote-instruction{
+  background-color: #c4cfdb;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#instruction-div h2{
+  color: #015FC7;
+  cursor: pointer;
+}
+#instruction-div p{
+  color: rgb(42, 42, 42);
+}
+#video-icon{
+  color: #015FC7;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+/* ------------------How to vote----------------- */
+#howToVote-title{
+  color: #015FC7;
+  text-align: center;
+}
+#voting-steps{
+  text-align: center;
+}
+#voter-id-details-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#voter-id-details-container #details h3{
+  color: #015FC7;
+}
+#voter-id-details-container #voter-id-icon{
+  color: #015FC7;
+  font-size: 30px;
+}
+#verify-your-identity-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#verify-your-identity-container #details h3{
+  color: #015FC7;
+}
+#verify-your-identity-container #verify-icon{
+  color: #015FC7;
+  font-size: 30px;
+}
+#pick-your-candidate-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-right: 24px;
+}
+#pick-your-candidate-container #details h3{
+  color: #015FC7;
+}
+#pick-your-candidate-container #person-icon{
+  color: #015FC7;
+  font-size: 30px;
+}
+#confirm-your-vote-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-left: 10px;
+}
+#confirm-your-vote-container #details h3{
+  color: #015FC7;
+}
+#confirm-your-vote-container #confirm-icon{
+  color: #015FC7;
+  font-size: 30px;
+}
+#understand-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#understand-btn{
+  background-color: #015FC7;
+  color: white;
+  border-radius: 6px;
+  width: 45vh;
+  height: 6vh;
+  /* font-weight: bold; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+#back-to-home{
+  color: #015FC7;
+  font-weight: bold;
+}
+
+
+/* ------------------Verify Voter ID-------------- */
+
+#verify-title{
+  color: #015FC7;
+  text-align: center;
+}
+#verify-para-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#voter-no-div{
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#voter-id-input{
+  width: 30vh;
+  height: 5vh;
+  border-radius: 6px;
+  border: solid 1px black;
+  padding-left: 8px;
+}
+#date-of-birth-div{
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#date-input{
+  width: 30vh;
+  height: 5vh;
+  border-radius: 6px;
+  border: solid 1px black;
+  padding-left: 8px;
+}
+#verify-btn-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#verify-btn{
+  background-color: #015FC7;
+  color: white;
+  border-radius: 6px;
+  width: 40vh;
+  height: 6vh;
+  /* font-weight: bold; */
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+/* ------------------Rules--------------------- */
+
+#rules{
+  color: #015FC7;
+  text-align: center;
+}
+#rules-subheading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#rules-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#rule1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  background-color: #9ec9fa;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#rule1 img{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+#checkboxBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+#proceed-div{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+  margin-right: 20px;
+}
+#cancelProceed{
+  background-color: #015FC7;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  width: 16vh;
+  height: 6vh;
+  cursor: pointer;
+}
+
+
+/* ------------------------- OTP Generate Page ----------------------- */
+
+
+#voter-register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#top-voterId-register{
+  background-color: #015FC7;
+  color: white;
+  border-radius: 6px;
+  width: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#bottom-voterId-register{
+ display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+ /* width: 50vh; */
+}
+#hello-voters{
+  color: #015FC7;
+
+}
+#voterId-input{
+  border-radius: 6px;
+  border: solid rgb(173, 173, 173) 1px;
+  width: 31vh;
+  height: 5vh;
+  padding-left: 8px;
+}
+#generate-btn{
+  background-color: #015FC7;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  width: 33vh;
+  height: 6vh;
+  cursor: pointer;
+}
+#register-voterId{
+  color: #015FC7;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* ----------------Register with Aadhar------------------ */
+
+
+#register-with-aadhar-main-div{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#aadhar-register-div{
+  text-align: center;
+}
+#aadhar-register-div h1{
+  color: #015FC7;
+
+}
+#aadhar-number-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#aadhar-number{
+  color: #015FC7;
+}
+#aadhar-number-input{
+  width: 31vh;
+  height: 5vh;
+  border: solid 1px black;
+  border-radius: 6px;
+  text-align: center;
+}
+#digilocker{
+  color: #015FC7;
+  text-align: center;
+
+}
+#proceed-voterId input{
+  background-color: #015FC7;
+  color: white;
+  border-radius: 6px;
+  width: 30vh;
+  height: 6vh;
+  /* font-weight: bold; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
