@@ -256,7 +256,7 @@ body{
   /* box-shadow: 1px 1px 4px gray; */
   padding: 20px;
   margin-top: 20px;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 /* 🟢 Profile Section */
@@ -2374,5 +2374,115 @@ body{
   #settings,
   #help-support {
     max-width: 700px;
+  }
+}
+
+
+
+/* ---------------- OTP Verification ------------------- */
+/* Center the OTP container */
+.otp-container {
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.otp-container h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.otp-container h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* OTP Input Fields */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #015FC7;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.otp-inputs input:focus {
+  border-color: #ff8c00;
+  box-shadow: 0px 0px 5px rgba(255, 140, 0, 0.5);
+}
+
+/* Resend OTP Text */
+.resend-text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #015FC7;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.resend-text:hover {
+  color: #003d99;
+}
+
+/* Proceed Button */
+.proceed-btn {
+  margin-top: 20px;
+  background: #015FC7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.proceed-btn:hover {
+  background: #003d99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .otp-inputs input {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-container {
+    max-width: 80%;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-inputs input {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .proceed-btn {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }

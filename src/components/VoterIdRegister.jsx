@@ -14,7 +14,7 @@ const VoterIdRegister = () => {
                 <p>Please enter your 10-digit voter ID</p>
                 <input type="text" placeholder='Eg: ABC1234567' id='voterId-input' required/>
                 <br />
-                <Link to='/afterhome'><input type="button" value={"Generate OTP"} id='generate-btn' /></Link>
+                <Link to='/otpverify'><input type="button" value={"Generate OTP"} id='generate-btn' /></Link>
                 <p><Link to='/register' id='register-voterId'>Register for Voter ID</Link></p>
             </div>
         </div>
