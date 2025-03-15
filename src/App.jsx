@@ -7,21 +7,40 @@ import Navbar from './components/Navbar'
 import InformationCenter from './components/InformationCenter'
 import HowToVote from './components/HowToVote'
 import VerifyVoterId from './components/VerifyVoterId'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import AfterHome from './components/AfterHome'
+import VoterProfile from './components/VoterProfile'
+import ListOfCandidate from './components/ListOfCandidate'
+import CandidateProfile from './components/CandidateProfile'
+import FinishVoting from './components/FinishVoting'
+import VoteRegistered from './components/VoteRegistered'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Rules /> */}
-      {/* <VoterIdRegister /> */}
-      {/* <RegisterWithAadhar /> */}
-      {/* <Navbar /> */}
-      {/* <Home /> */}
-      {/* <InformationCenter /> */}
-      {/* <HowToVote /> */}
-      <VerifyVoterId />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='rules' element={<Rules />} />
+          <Route path='register' element={<RegisterWithAadhar />} />
+          <Route path='afterhome' element={<AfterHome />}>
+            <Route path='informationcenter' element={<InformationCenter />} />
+          </Route>
+          <Route path='voteridregister' element={<VoterIdRegister />} />
+          <Route path='profile' element={<VoterProfile />} />
+          <Route path='vote' element={<HowToVote />} />
+          <Route path='verifyvote' element={<VerifyVoterId />} />
+          <Route path='candidates' element={<ListOfCandidate />} />
+          <Route path='candidateprofile' element={<CandidateProfile />} />
+          <Route path='finishvoting' element={<FinishVoting />} />
+          <Route path='voteregistered' element={<VoteRegistered />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

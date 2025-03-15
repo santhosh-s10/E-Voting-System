@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const VerifyVoterId = () => {
   return (
@@ -13,15 +15,15 @@ const VerifyVoterId = () => {
 
         <div id=''>
             <div id='voter-no-div'>
-                <p>Voter ID Number</p>
-                <input type="text" placeholder='0123456789' id='voter-id-input'/>
+                <p>Voter ID</p>
+                <input type="text" placeholder='Enter your Voter ID number' id='voter-id-input'/>
             </div>
             <div id='date-of-birth-div'>
                 <p>Date of Birth (As Written on Aadhar)</p>
                 <input type="date" id='date-input'/>
             </div>
             <div id='verify-btn-div'>
-                <input type="button" name="" id="verify-btn" value={"Verify Details"}/>
+                <Link to='/candidates'><input type="button" name="" id="verify-btn" value={"Verify Details"}/></Link>
             </div>
         </div>
     </div>

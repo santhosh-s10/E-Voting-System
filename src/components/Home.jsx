@@ -1,46 +1,33 @@
-import React from 'react'
-import india from '../assets/India.jpg'
-import profile from '../assets/profile.png'
-import polling from '../assets/polling.svg'
+import React from 'react';
+import india from '../assets/India.jpg';
+import profile from '../assets/profile.png';
+import polling from '../assets/polling.svg';
+import { FaHandPointDown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import Rules from './Rules';
+import InformationCenter from './InformationCenter';
 
 const Home = () => {
   return (
     <div>
-        <div id='home-containers'>
-            <div id='container-1'>
-                <img src={india} alt="" id='india-img' />
-            </div>
-            <div id='container-2'>
-                <div id='profile-div'>
-                    <div id='profile-img'>
-                        <img src={profile} alt="" />
-                    </div>
-                    <div id='profile-name'>
-                        <p id='names'>Ashutosh Parashar</p>
-                        <p id='voter-id'>Voter ID: ABC1234567</p>
-                    </div>
-                </div>
-                <div id='constituency-status'>
-                    <div id='constituency-div'>
-                        <p id='constituency'>Voting Constituency</p>
-                        <p id='place'>Salem</p>
-                    </div>
-                    <div id='status-div'>
-                        <p id='status'>Status</p>
-                        <p id='status-value'>Registered</p>
-                    </div>
-                </div>
-        <div id='polling-div'>
-                <h3>Polling closes in: </h3>
-                <p>08:45:57</p>
-                <img src={polling} alt="" />
-            </div>
-            </div>
-        </div>
+    <div id="home-container">
+      {/* India Image - Appears First */}
+      <div id="image-container">
+        <img src={india} alt="India" id="india-img" />
+      </div>
 
+      <div>
+        <div style={{display: 'flex'}}>
+          <p id='new-voter-register-para'>New Voter's register here</p> <FaHandPointDown id='hand-icon'/>
+          </div>
+        <Link to='/rules'><input type="button" id='new-voter-register-btn' value={'Register'} /></Link>
+        <p id='login-voter-id'>Already register <Link to='/voteridregister' id='login-here'>Login here</Link></p>
+      </div>
+      </div>
 
+      <InformationCenter />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

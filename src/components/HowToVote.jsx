@@ -3,6 +3,7 @@ import { FaIdCard, FaPerson } from "react-icons/fa6";
 import { BsPersonFillCheck } from "react-icons/bs";
 import { IoPerson } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const HowToVote = () => {
@@ -60,7 +61,7 @@ const HowToVote = () => {
         </div>
 
         <div id='understand-div'>
-            <input type="button" name="" id="understand-btn" value={"I Understand"} />
+            <Link to='/verifyvote'><input type="button" name="" id="understand-btn" value={"I Understand"} /></Link>
             <p id='back-to-home'>Go back to homepage</p>
         </div>
     </div>
