@@ -976,9 +976,6 @@ body{
     margin: auto;
   }
 
-  .rules-understand-btn {
-    /* width: 100%; */
-  }
 }
 
 @media (max-width: 480px) {
