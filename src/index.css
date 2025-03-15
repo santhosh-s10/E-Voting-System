@@ -1535,7 +1535,7 @@ body{
   padding: 20px;
   max-width: 1200px;
   margin: auto;
-  /* padding-top: 100px; */
+  padding-top: 50px;
 }
 
 /* Heading */
@@ -1797,7 +1797,7 @@ body{
 
 /* === Content Section === */
 #finish-vote-content {
-  width: 100%;
+  /* width: 100%; */
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -1887,6 +1887,7 @@ body{
 
   #finish-vote-headings h1 {
     font-size: 2.6rem;
+    padding-top: 50px;
   }
 }
 
@@ -1894,6 +1895,7 @@ body{
 @media (max-width: 1200px) {
   #finish-vote-container {
     padding: 30px 15px;
+    padding-top: 70px;
   }
 
   #finish-vote-headings h1 {
@@ -1910,6 +1912,7 @@ body{
 @media (max-width: 992px) {
   #finish-vote-headings h1 {
     font-size: 2.2rem;
+    padding-top: 50px;
   }
 
   #finish-vote-candidate-data {
@@ -1931,6 +1934,7 @@ body{
 @media (max-width: 768px) {
   #finish-vote-headings h1 {
     font-size: 2rem;
+    padding-top: 50px;
   }
 
   #finish-vote-content {
