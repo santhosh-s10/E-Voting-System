@@ -2557,7 +2557,6 @@ body{
 /* 🟡 Small Screens (Mobile) */
 @media (max-width: 576px) {
   .results-container {
-    width: 95%;
     padding: 15px;
     margin-top: 80px;
   }
