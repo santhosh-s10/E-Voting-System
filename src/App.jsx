@@ -16,6 +16,7 @@ import CandidateProfile from './components/CandidateProfile'
 import FinishVoting from './components/FinishVoting'
 import VoteRegistered from './components/VoteRegistered'
 import OtpVerification from './components/OtpVerification'
+import Result from './components/Result'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='finishvoting' element={<FinishVoting />} />
           <Route path='voteregistered' element={<VoteRegistered />} />
           <Route path='otpverify' element={<OtpVerification />} />
+          <Route path='result' element={<Result />} />
         </Route>
       </Routes>
     </BrowserRouter>

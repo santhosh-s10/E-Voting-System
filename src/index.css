@@ -188,158 +188,156 @@ body{
 
 
 /* --------------------Home------------------ */
-
-/* 🟢 Home Container */
+/* 🟢 Home Container - Responsive Layout */
 #home-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+  text-align: center;
 }
 
-/* 🟢 India Image - Appears First */
+/* 🟢 India Image - Responsive Design */
 #image-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 #india-img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 8px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
-/* New Voter Registration */
-
-#hand-icon{
-  font-size: 22px;
-  padding-top: 20px;
-  color: #015FC7;
-}
-
-#new-voter-register-btn{
-  background-color: #015FC7;
-  color: white;
-  border-radius: 6px;
-  width: 45vh;
-  height: 6vh;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-  
-#new-voter-register-btn:hover {
-  background-color: #004bb5;
-}
-
-#login-here{
-  color: #015FC7;
-  text-decoration: none;
-  font-weight: bold;
-}
-#login-here:hover{
-  color: #004bb5;
-}
-
-/* 🟢 Content Container */
-#content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 500px;
-  background: white;
-  border-radius: 8px;
-  /* box-shadow: 1px 1px 4px gray; */
-  padding: 20px;
+/* 🟢 Quotes Container - Adjustments for Different Screens */
+#quotes-container {
   margin-top: 20px;
-  padding-top: 60px;
-}
-
-/* 🟢 Profile Section */
-#profile-section {
-  display: flex;
-  align-items: center;
-  background-color: #015FC7;
-  border-radius: 8px 8px 0 0;
-  padding: 15px;
-  width: 100%;
-}
-
-#profile-img img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 2px solid white;
-  margin-right: 10px;
-}
-
-#profile-info {
-  color: white;
-}
-
-#profile-info #name {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#profile-info #voter-id {
-  color: gainsboro;
-}
-
-/* 🟢 Voting Info */
-#voting-status {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-}
-
-.status-box {
-  text-align: center;
-}
-
-.status-title {
-  color: #015FC7;
-  font-weight: bold;
-}
-
-.status-detail {
-  color: gray;
-  font-size: 16px;
-}
-
-.registered {
-  color: green;
-  font-weight: bold;
-}
-
-/* 🟢 Polling Status */
-#polling-section {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* gap: 15px; */
+}
+
+/* Quotes Styling */
+#quote1, #quote2, #quote3 {
   text-align: center;
-  border: 2px solid #015FC7;
-  border-radius: 6px;
-  padding: 15px;
-  margin-top: 10px;
-  width: 100%;
-}
-
-#polling-section img {
-  max-width: 80%;
-  height: auto;
-}
-
-#polling-section p {
-  color: #015FC7;
-  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
   font-weight: bold;
 }
+
+#quote1 {
+  color: orangered;
+  font-size: 24px;
+  text-shadow: 3px 3px 5px rgba(255, 69, 0, 0.7);
+  font-family: 'Poppins', sans-serif;
+}
+
+#quote2 {
+  color: navy;
+  font-size: 22px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 128, 0.5);
+  font-family: 'Merriweather', serif;
+}
+
+#quote3 {
+  color: green;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.5);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 🟢 Responsive Design for Different Screen Sizes */
+
+/* 🟡 Small Screens (Mobile) */
+@media (max-width: 576px) {
+  #home-container {
+    padding: 10px;
+  }
+
+  #quotes-container {
+    width: 100%;
+  }
+
+  #quote1 {
+    font-size: 18px;
+  }
+
+  #quote2 {
+    font-size: 16px;
+  }
+
+  #quote3 {
+    font-size: 14px;
+  }
+}
+
+/* 🟠 Medium Screens (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  #image-container {
+    width: 80%;
+  }
+
+  #quote1 {
+    font-size: 22px;
+  }
+
+  #quote2 {
+    font-size: 20px;
+  }
+
+  #quote3 {
+    font-size: 18px;
+  }
+}
+
+/* 🔵 Large Screens (Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #home-container {
+    flex-direction: column;
+  }
+
+  #image-container {
+    width: 70%;
+  }
+}
+
+/* 🟣 Extra-Large Screens (Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #home-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #image-container {
+    width: 50%;
+  }
+
+  #quotes-container {
+    width: 50%;
+  }
+}
+
+/* 🟤 Extra-Extra-Large Screens (4K Monitors) */
+@media (min-width: 1441px) {
+  #home-container {
+    max-width: 1400px;
+  }
+
+  #india-img {
+    max-width: 700px;
+  }
+}
+
 
 /* 🟢 Fully Responsive Design */
 @media (min-width: 1024px) {
@@ -2484,5 +2482,169 @@ body{
   .proceed-btn {
     font-size: 14px;
     padding: 8px 12px;
+  }
+}
+
+
+
+/* ------------------------ Result ------------------ */
+/* Results Page Container */
+.results-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eef3f7;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+/* Results Title */
+.results-title {
+  color: #003366;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Table Styling */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-table th,
+.results-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #e0e0e0;
+  font-size: 16px;
+}
+
+.results-table td {
+  font-size: 14px;
+}
+
+/* Candidate Info */
+.candidate-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.party-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Votes Count */
+.vote-count {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ✅ Responsive Design for Different Screens */
+
+/* 🟡 Small Screens (Mobile) */
+@media (max-width: 576px) {
+  .results-container {
+    width: 95%;
+    padding: 15px;
+    margin-top: 80px;
+  }
+
+  .results-title {
+    font-size: 20px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .party-logo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* 🟠 Medium Screens (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .results-container {
+    width: 90%;
+    margin-top: 90px;
+  }
+
+  .results-title {
+    font-size: 22px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* 🔵 Large Screens (Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .results-container {
+    max-width: 80%;
+  }
+
+  .results-title {
+    font-size: 24px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 16px;
+  }
+}
+
+/* 🟣 Extra-Large Screens (Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .results-container {
+    max-width: 70%;
+  }
+
+  .results-title {
+    font-size: 26px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 18px;
+  }
+}
+
+/* 🟤 Extra-Extra-Large Screens (4K Monitors) */
+@media (min-width: 1441px) {
+  .results-container {
+    max-width: 60%;
+  }
+
+  .results-title {
+    font-size: 28px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 20px;
+  }
+
+  .party-logo {
+    width: 40px;
+    height: 40px;
   }
 }

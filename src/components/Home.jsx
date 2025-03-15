@@ -16,12 +16,10 @@ const Home = () => {
         <img src={india} alt="India" id="india-img" />
       </div>
 
-      <div>
-        <div style={{display: 'flex'}}>
-          <p id='new-voter-register-para'>New Voter's register here</p> <FaHandPointDown id='hand-icon'/>
-          </div>
-        <Link to='/rules'><input type="button" id='new-voter-register-btn' value={'Register'} /></Link>
-        <p id='login-voter-id'>Already register <Link to='/voteridregister' id='login-here'>Login here</Link></p>
+      <div id='quotes-container'>
+        <p id='quote1'>Let us vote</p>
+        <p id='quote2'>Let us Build our Nation</p>
+        <p id='quote3'>Value your Vote for better India</p>
       </div>
       </div>
 

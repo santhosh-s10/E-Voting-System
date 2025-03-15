@@ -31,12 +31,12 @@ const ListOfCandidate = () => {
       description: "Yuga Thuasi Party",
       image: "https://tse1.mm.bing.net/th?id=OIP.MMrhJddAJURE4o8ecUKNwwHaHa&pid=Api&P=0&h=180",
     },
-    {
-      id: 5,
-      title: "Gagan Prakash Yadav",
-      description: "Apna Dal",
-      image: "https://apnadals.weebly.com/uploads/1/2/5/4/125494241/editor/logo.png?1561372265",
-    },
+    // {
+    //   id: 5,
+    //   title: "Gagan Prakash Yadav",
+    //   description: "Apna Dal",
+    //   image: "https://apnadals.weebly.com/uploads/1/2/5/4/125494241/editor/logo.png?1561372265",
+    // },
   ];
 
   return (
