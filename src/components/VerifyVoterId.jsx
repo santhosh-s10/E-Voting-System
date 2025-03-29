@@ -23,7 +23,7 @@ const VerifyVoterId = () => {
                 <input type="date" id='date-input'/>
             </div>
             <div id='verify-btn-div'>
-                <Link to='/candidates'><input type="button" name="" id="verify-btn" value={"Verify Details"}/></Link>
+                <Link to='/otpverify'><input type="button" name="" id="verify-btn" value={"Verify Details"}/></Link>
             </div>
         </div>
     </div>

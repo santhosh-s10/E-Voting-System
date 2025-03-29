@@ -64,7 +64,7 @@ const OtpVerification = () => {
       </p>
 
       {/* Proceed Button */}
-      <Link to="/afterhome">
+      <Link to="/candidates">
         <button className="proceed-btn">Proceed</button>
       </Link>
     </div>

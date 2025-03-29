@@ -61,7 +61,7 @@ const HowToVote = () => {
         </div>
 
         <div id='understand-div'>
-            <Link to='/verifyvote'><input type="button" name="" id="understand-btn" value={"I Understand"} /></Link>
+            <Link to='/rules'><input type="button" name="" id="understand-btn" value={"I Understand"} /></Link>
           <p><Link to='/' id='back-to-home'>Go back to homepage</Link></p>
         </div>
     </div>
