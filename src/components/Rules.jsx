@@ -45,7 +45,7 @@ const Rules = () => {
 
       {/* Buttons */}
       <div id="button-container">
-        <Link to='/verifyvote'><button className="rules-understand-btn">I Understand</button></Link>
+        <Link to='/voteridregister'><button className="rules-understand-btn">I Understand</button></Link>
       </div>
 
     </div>

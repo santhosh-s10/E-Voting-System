@@ -14,7 +14,7 @@ const VoteRegistered = () => {
           <MdVerifiedUser id='verify-tick-icon'/>
           <p>Vote Registered</p>
           <p>Thank you for voting via VoteBlock!</p>
-          <Link to='/'><input type="button" name="" id="back-to-home-btn" value={'Back to homepage'}/></Link>
+          <Link to='/afterhome'><input type="button" name="" id="back-to-home-btn" value={'Back to homepage'}/></Link>
         </div>
     </div>
   )

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Rules from './components/Rules'
 import VoterIdRegister from './components/VoterIdRegister'
 import RegisterWithAadhar from './components/RegisterWithAadhar'
-import Home from './components/Home'
 import Navbar from './components/Navbar'
 import InformationCenter from './components/InformationCenter'
 import HowToVote from './components/HowToVote'
@@ -17,6 +16,7 @@ import FinishVoting from './components/FinishVoting'
 import VoteRegistered from './components/VoteRegistered'
 import OtpVerification from './components/OtpVerification'
 import Result from './components/Result'
+import FirstScreen from './components/FirstScreen'
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<FirstScreen />} />
           <Route path='rules' element={<Rules />} />
           <Route path='register' element={<RegisterWithAadhar />} />
           <Route path='afterhome' element={<AfterHome />}>

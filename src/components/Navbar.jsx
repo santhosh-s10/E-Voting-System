@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/afterhome" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/profile" onClick={closeMenu}>Profile</Link></li>
           <li><Link to="/vote" onClick={closeMenu}>Vote</Link></li>
           <li><Link to="/result" onClick={closeMenu}>Result</Link></li>

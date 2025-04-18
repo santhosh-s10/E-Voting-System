@@ -1,19 +1,18 @@
 import React from 'react'
-import india from '../assets/India.jpg'
 import profile from '../assets/profile.png'
 import polling from '../assets/polling.svg'
 import InformationCenter from './InformationCenter'
+import Navbar from './Navbar'
 
 const AfterHome = () => {
   return (
     <div>
-    <div id='home-container'>
-         {/* India Image - Appears First */}
-              <div id="image-container">
-                <img src={india} alt="India" id="india-img" />
-              </div>
-                    {/* Content Blocks */}
-      <div id="content-container">
+
+      <Navbar />
+
+    <div id='after-home-container'>
+      {/* Content Blocks */}
+      <div id="profile-content-container">
         {/* Profile Section */}
         <div id="profile-section">
           <div id="profile-img">
@@ -25,17 +24,7 @@ const AfterHome = () => {
           </div>
         </div>
 
-        {/* Voting Constituency & Status */}
-        <div id="voting-status">
-          <div className="status-box">
-            <p className="status-title">Voting Constituency</p>
-            <p className="status-detail">Rasipuram</p>
-          </div>
-          <div className="status-box">
-            <p className="status-title">Status</p>
-            <p className="status-detail registered">Registered</p>
-          </div>
-        </div>
+    
 
         {/* Polling Info */}
         <div id="polling-section">
@@ -45,7 +34,7 @@ const AfterHome = () => {
         </div>
       </div>
       </div>
-      
+
       <InformationCenter />
     </div>
   )

@@ -186,6 +186,67 @@ body{
 
 
 
+/* -------------------- First Screen ---------------- */
+
+/* Container to center everything vertically and horizontally */
+.first-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper to center image and button in a column */
+.content-wrapper {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Responsive image */
+.india-logo {
+  width: 100%;
+  /* height: auto; */
+
+}
+
+/* Centered button below image */
+.proceed-btn {
+  background-color: #015fc7;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  height: 55px;
+  width: 360px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proceed-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .proceed-btn {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proceed-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+
+
 
 /* --------------------Home------------------ */
 /* 🟢 Home Container - Responsive Layout */
@@ -408,6 +469,122 @@ body{
 }
 
 
+/* --------------- After Home ---------------------- */
+/* Overall page container */
+#after-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+/* Inner container */
+#profile-content-container {
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Profile Section */
+#profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background: #015fc7;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image */
+#profile-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+/* Profile Info Text */
+#profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+/* Polling Section */
+#polling-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#polling-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+#polling-section p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsive Image */
+#polling-section img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #profile-img img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #polling-section img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile-section {
+    padding: 15px;
+  }
+
+  #profile-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #polling-section h3 {
+    font-size: 1.1rem;
+  }
+
+  #polling-section p {
+    font-size: 1rem;
+  }
+}
 
 
 
@@ -645,6 +822,7 @@ body{
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 #understand-btn:hover {
@@ -722,6 +900,8 @@ body{
   padding-top: 80px;
 }
 
+
+
 #verify-para-div {
   text-align: center;
   max-width: 800px;
@@ -776,7 +956,27 @@ body{
   background-color: #004bb5;
 }
 
+/* New box with shadow and border */
+#verify-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+
+
 /* Responsive Design */
+
+@media (max-width: 640px) {
+  #verify-box {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+}
 
 /* Small Screens (max-width: 640px) */
 @media (max-width: 640px) {
@@ -1480,6 +1680,7 @@ body{
   #confirm-candidate-btn{
     height: 45px;
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 }
 
