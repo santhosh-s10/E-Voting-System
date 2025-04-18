@@ -193,7 +193,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full screen height */
+  height: 90vh; /* Full screen height */
   box-sizing: border-box;
 
 }
