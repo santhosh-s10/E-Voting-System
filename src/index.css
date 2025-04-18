@@ -188,14 +188,18 @@ body{
 
 /* -------------------- First Screen ---------------- */
 
-/* Container to center everything vertically and horizontally */
+/* Main container centers content */
 .first-screen-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; /* Full screen height */
+  padding: 20px;
+  box-sizing: border-box;
+
 }
 
-/* Wrapper to center image and button in a column */
+/* Wrapper to center image and button in column */
 .content-wrapper {
   text-align: center;
   width: 100%;
@@ -205,11 +209,12 @@ body{
 /* Responsive image */
 .india-logo {
   width: 100%;
-  /* height: auto; */
-
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-/* Centered button below image */
+/* Proceed button styles */
 .proceed-btn {
   background-color: #015fc7;
   border-radius: 12px;
@@ -218,7 +223,8 @@ body{
   font-size: 1.3rem;
   font-weight: bold;
   height: 55px;
-  width: 360px;
+  width: 80%;
+  max-width: 360px;
   cursor: pointer;
   margin-top: 20px;
   transition: 0.3s ease-in-out;
@@ -229,18 +235,48 @@ body{
   background-color: #0056b3;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
+/* SM - Small Devices */
+@media (max-width: 640px) {
   .proceed-btn {
     font-size: 1rem;
-    padding: 10px 24px;
+    height: 50px;
+    width: 90%;
   }
 }
 
-@media (max-width: 480px) {
+/* MD - Medium Devices */
+@media (min-width: 641px) and (max-width: 768px) {
   .proceed-btn {
-    width: 100%;
-    padding: 12px;
+    font-size: 1.1rem;
+    height: 52px;
+    width: 85%;
+  }
+}
+
+/* LG - Large Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .proceed-btn {
+    font-size: 1.2rem;
+    height: 55px;
+    width: 80%;
+  }
+}
+
+/* XL - Extra Large Devices */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .proceed-btn {
+    font-size: 1.25rem;
+    height: 58px;
+    width: 75%;
+  }
+}
+
+/* 2XL - Very Large Devices */
+@media (min-width: 1281px) {
+  .proceed-btn {
+    font-size: 1.3rem;
+    height: 60px;
+    width: 360px;
   }
 }
 
